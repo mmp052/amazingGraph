@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+header{
+    width: 100%;
+    padding: 20px 0;
+}
+.logo{
+    float: left;
+}
+.logo h2{
+    color: #D2872C;
+}
+.menu-desk, .menu-cel{
+    float: right;
+}
+.menu-desk ul, .menu-cel{
+    list-style-type: none;
+}
+.menu-desk ul li,.menu-cel ul li{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 18px;
+}
+.menu-desk ul li a,.menu-cel ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu-cel{
+    display: none;
+}
+.menu-cel i{
+    font-size: 32px;
+    cursor: pointer;
+}
+section{
+    padding: 100px 30px;
+}
+.chamada{
+    z-index: 1;
+    float: left;
+    width: 40%;
+    position: relative;
+    left: 105px;
+}
+.chamada h1{
+    font-size: 59px;
+    color: #766F68;
+    padding: 15px 0;
+    position: relative;
+    bottom: 40px;
+}
+.chamada p{
+    color: #766F68;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.btn{
+    padding: 10px 0;
+    width: 250px;
+    background-color: #D2872C;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.img{
+    float: right;
+    width: 60%;
+    height: 70%;
+}
+@media screen and (max-width: 1024px){
+    .menu-desk,.menu-cel ul{
+        display: none;
+    }
+    .menu-cel{
+        display: block;
+    }
+    .chamada{
+        float:none;
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+    .chamada h1{
+        position: static;
+        font-size: 45px;
+    }
+    .img{
+        float: none;
+        width: 100%;
+    }
+    .btn{
+        display: inline-block;
+        margin-right: -4px;
+    }
+}
